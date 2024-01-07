@@ -6,7 +6,7 @@ import Dashboard from './component/dashboard'
 function App() {
   return <>
     <div id="wrapper">
-    <Title/>
+    {/* <Title/> */}
 
     <Sidebar/>
     <Dashboard/>
