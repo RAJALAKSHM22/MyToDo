@@ -1,8 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
 
-import Sidebar from './component/sidebar'
-import Dashboard from './component/dashboard'
 import Page from './component/Page'
 
 
@@ -79,14 +77,7 @@ function App() {
                 <div className="d-sm-flex align-items-center justify-content-between mb-4">
                   <h1 className="h3 mb-0 text-gray-800"><i><b>Dashboard</b></i></h1>
                 </div>
-                  {/* Page Slot */}
-                {/* <div className="row"> 
-                  {
-                    slots.map((e,i)=>{
-                      return <Dashboard slots={e} key={i} />
-                    })
-                  }
-                </div> */}
+                  
                   {/* User List */}
                 <div className="d-sm-flex align-items-center justify-content-between mb-4">
                   <h1 className="h3 mb-0 text-gray-800"><i>User List</i></h1>
