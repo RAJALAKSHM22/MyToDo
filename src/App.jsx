@@ -3,8 +3,6 @@ import { useState } from 'react'
 
 import Page from './component/Page'
 
-
-import {BrowserRouter, Routes,Route} from 'react-router-dom'
 import Adduser from './component/Adduser'
 function App() {
 
@@ -32,41 +30,12 @@ function App() {
     }
     
   ])
-  let slots=[
-    { isProgress: false,
-      title:"Earnings (Monthly)",
-      price:"40,000",
-      color:"primary",
-      icon:"fas fa-calendar fa-2x text-gray-300"
-    },
-    {isProgress:false ,
-      title:"Earnings (Annual)",
-      price:"215,000",
-      color:"success",
-      icon:"fas fa-dollar-sign fa-2x text-gray-300"
-   },
-    {isProgress:true ,
-      title:"Tasks",
-      price:"50",
-      color:"info",
-      icon:"fas fa-clipboard-list fa-2x text-gray-300"
-  },
-  {isProgress: false,
-    title:" Pending Requests",
-    price:"18",
-    color:"warning",
-    icon:"fas fa-comments fa-2x text-gray-300"
-  }
-    
-  ]
+  
   
   return <>
-
-    <BrowserRouter>
+    
         <div id="wrapper">
-        {/* <Sidebar/> */}
-
-        {/* <Routes> */}
+        
         <div id="content-wrapper" className="d-flex flex-column">
             {/* Main Content */}
           <div id="content">
@@ -87,12 +56,10 @@ function App() {
                 
             </div> 
           </div>
-        </div>  
-        {/* </Routes> */}
-        
+        </div>         
 
         </div>
-    </BrowserRouter>
+    
    
 
   </>
